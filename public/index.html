@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- Главная страница: статика фронтенда для демо (посты, комментарии, лайки) -->
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Демо: Лайки и Комментарии</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+	<div class="container">
+		<h1>Демо: Лайки и Комментарии</h1>
+		<p class="muted">Bun + Hono backend, Supabase DB, VanillaJS фронтенд</p>
+		<!-- Блок управления авторизацией -->
+		<div class="row" style="margin:8px 0 16px; gap: 8px;">
+			<button id="login">Войти через Google</button>
+			<button id="logout">Выйти</button>
+			<span id="auth-status" class="badge">Гость</span>
+			<span class="small">Для создания/редактирования требуется вход</span>
+		</div>
+
+		<!-- Список постов -->
+		<section>
+			<h2>Посты</h2>
+			<div id="posts"></div>
+		</section>
+
+		<!-- Форма добавления комментария -->
+		<section>
+			<h2>Добавить комментарий</h2>
+			<form id="comment-form">
+				<label>Имя
+					<input type="text" id="author_name" placeholder="Ваше имя" required />
+				</label>
+				<label>Пост
+					<select id="post_id" required></select>
+				</label>
+				<label>Комментарий
+					<textarea id="content" placeholder="Ваш комментарий" required></textarea>
+				</label>
+				<button type="submit">Отправить</button>
+			</form>
+		</section>
+
+		<!-- Список комментариев -->
+		<section>
+			<h2>Комментарии</h2>
+			<div id="comments"></div>
+		</section>
+
+		<!-- Лайки и форма постановки лайка -->
+		<section>
+			<h2>Лайки</h2>
+			<form id="like-form">
+				<label>Имя
+					<input type="text" id="like_author_name" placeholder="Ваше имя" required />
+				</label>
+				<label>Пост
+					<select id="like_post_id" required></select>
+				</label>
+				<button type="submit">Поставить лайк</button>
+			</form>
+			<div id="likes"></div>
+		</section>
+
+	</div>
+	<script src="/app.js" defer></script>
+</body>
+</html>
+
+

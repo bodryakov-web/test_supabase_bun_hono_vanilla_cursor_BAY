@@ -1,0 +1,16 @@
+{
+  "name": "test_supabase_bun_hono_vanilla_cursor_BAY",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run server/index.ts",
+    "start": "bun run server/index.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "hono": "^4.5.8"
+  },
+  "devDependencies": {
+    "bun-types": "^1.2.20"
+  }
+}

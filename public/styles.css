@@ -1,0 +1,121 @@
+/* Стили фронтенда: тёмная тема, базовая типографика и компоненты UI */
+:root {
+    --bg: #0b1020;
+    --fg: #e5e7eb;
+    --muted: #9ca3af;
+    --card: #111827;
+    --accent: #60a5fa
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Базовая типографика и фон */
+body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu;
+    background: var(--bg);
+    color: var(--fg)
+}
+
+/* Контейнер макета */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px
+}
+
+h1 {
+    margin-top: 0
+}
+
+/* Карточка-секция */
+section {
+    background: var(--card);
+    padding: 16px;
+    border-radius: 10px;
+    margin: 16px 0;
+    border: 1px solid #1f2937
+}
+
+label {
+    display: block;
+    margin: 8px 0
+}
+
+/* Поля ввода */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background: #0b1220;
+    color: var(--fg)
+}
+
+/* Кнопки действий */
+button {
+    background: var(--accent);
+    color: #0b1220;
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+button:hover {
+    filter: brightness(1.1)
+}
+
+.muted {
+    color: var(--muted)
+}
+
+/* Вертикальный список элементов */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+/* Элемент списка (карточка) */
+.item {
+    padding: 10px;
+    border-radius: 8px;
+    background: #0b1220;
+    border: 1px solid #1f2937
+}
+
+/* Раскладка по горизонтали: заголовки/действия */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between
+}
+
+/* Мелкий вторичный текст */
+.small {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+/* Блок кнопок действий */
+.actions {
+    display: flex;
+    gap: 8px
+}
+
+/* Индикатор статуса авторизации */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    border: 1px solid #374151;
+    background: #0b1220;
+    color: var(--muted)
+}
