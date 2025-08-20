@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # fly.toml app configuration file generated for test-supabase-bun-hono-vanilla-cursor-bay on 2025-08-20T13:34:36+03:00
+=======
+# fly.toml app configuration file generated for test-supabase-bun-hono-vanilla-cursor-bay on 2025-08-20T09:49:58Z
+>>>>>>> 680996055fee00b14cbe1f2647d05f925dc4d514
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -20,3 +24,7 @@ primary_region = 'fra'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+<<<<<<< HEAD
+=======
+  memory_mb = 1024
+>>>>>>> 680996055fee00b14cbe1f2647d05f925dc4d514
